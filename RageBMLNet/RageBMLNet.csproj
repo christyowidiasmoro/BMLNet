@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D1F98C7-6827-4F99-B676-F5C9AF632609}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssetPackage</RootNamespace>
+    <AssemblyName>RageBMLNet</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BMLNet\BMLBehavior.cs" />
+    <Compile Include="BMLNet\BMLBlock.cs" />
+    <Compile Include="BMLNet\BMLBml.cs" />
+    <Compile Include="BMLNet\BMLFace.cs" />
+    <Compile Include="BMLNet\BMLFaceFacs.cs" />
+    <Compile Include="BMLNet\BMLFaceLexeme.cs" />
+    <Compile Include="BMLNet\BMLFaceShift.cs" />
+    <Compile Include="BMLNet\BMLFeedback.cs" />
+    <Compile Include="BMLNet\BMLGaze.cs" />
+    <Compile Include="BMLNet\BMLGazeShift.cs" />
+    <Compile Include="BMLNet\BMLGesture.cs" />
+    <Compile Include="BMLNet\BMLHead.cs" />
+    <Compile Include="BMLNet\BMLHeadDirectionShift.cs" />
+    <Compile Include="BMLNet\BMLLocomotion.cs" />
+    <Compile Include="BMLNet\BMLPointing.cs" />
+    <Compile Include="BMLNet\BMLPose.cs" />
+    <Compile Include="BMLNet\BMLPosture.cs" />
+    <Compile Include="BMLNet\BMLPostureShift.cs" />
+    <Compile Include="BMLNet\BMLSpeech.cs" />
+    <Compile Include="BMLNet\BMLStance.cs" />
+    <Compile Include="BMLNet\BMLSyncPoint.cs" />
+    <Compile Include="BMLNet\BMLWait.cs" />
+    <Compile Include="RageBMLNet.cs" />
+    <Compile Include="RageBMLNetSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RageBMLNet.VersionAndDependencies.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RageAssetManager\RageAssetManager.csproj">
+      <Project>{da8e9056-2e52-4029-81eb-a2d167614c47}</Project>
+      <Name>RageAssetManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
