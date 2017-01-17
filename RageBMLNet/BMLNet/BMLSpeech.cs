@@ -17,6 +17,8 @@
 using System;
 using System.Xml;
 
+using AssetManagerPackage;
+
 namespace BMLNet
 {
     /// <summary>
@@ -58,7 +60,7 @@ namespace BMLNet
             }
             else
             {
-                Console.Error.WriteLine("WARNING: cannot read text node in speech block");
+                AssetManager.Instance.Log(AssetPackage.Severity.Warning, "cannot read text node in speech block");
             }
 
         }

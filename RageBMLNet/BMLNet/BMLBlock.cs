@@ -19,6 +19,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 
+using AssetManagerPackage;
+
+
 namespace BMLNet
 {
     /// <summary>
@@ -72,7 +75,7 @@ namespace BMLNet
 
             if (valueString == null && required)
             {
-                Console.Error.WriteLine("WARNING: block " + reader.Name + " missing attribute " + atributeName + " !");
+                AssetManager.Instance.Log(AssetPackage.Severity.Warning, "block " + reader.Name + " missing attribute " + atributeName + " !");
             }
             else {
                 // if we need int value
@@ -81,7 +84,7 @@ namespace BMLNet
                     int valueInt = 0;
                     if (required && !int.TryParse(valueString, out valueInt))
                     {
-                        Console.Error.WriteLine("WARNING: block " + reader.Name + " cannot parse " + atributeName + " as an int !");
+                        AssetManager.Instance.Log(AssetPackage.Severity.Warning, "block " + reader.Name + " cannot parse " + atributeName + " as an int !");
                     }
                     else
                     {
@@ -94,7 +97,7 @@ namespace BMLNet
                     float valueFloat = 0.0f;
                     if (required && !float.TryParse(valueString, out valueFloat))
                     {
-                        Console.Error.WriteLine("WARNING: block " + reader.Name + " cannot parse " + atributeName + " as a float!");
+                        AssetManager.Instance.Log(AssetPackage.Severity.Warning, "block " + reader.Name + " cannot parse " + atributeName + " as a float!");
                     }
                     else
                     {

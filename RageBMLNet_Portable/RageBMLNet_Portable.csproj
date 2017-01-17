@@ -35,21 +35,86 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\TrackerAsset\TrackerAsset.cs">
-      <Link>TrackerAsset.cs</Link>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLBehavior.cs">
+      <Link>BMLNet\BMLBehavior.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\AppData\Local\Temp\sj0mxieu.12c\MyFirstAsset\MyFirstAssetSettings.cs">
-      <Link>MyFirstAssetSettings.cs</Link>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLBlock.cs">
+      <Link>BMLNet\BMLBlock.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\AppData\Local\Temp\sj0mxieu.12c\MyFirstAsset\Properties\AssemblyInfo.cs">
+    <Compile Include="..\RageBMLNet\BMLNet\BMLBml.cs">
+      <Link>BMLNet\BMLBml.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLFace.cs">
+      <Link>BMLNet\BMLFace.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLFaceFacs.cs">
+      <Link>BMLNet\BMLFaceFacs.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLFaceLexeme.cs">
+      <Link>BMLNet\BMLFaceLexeme.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLFaceShift.cs">
+      <Link>BMLNet\BMLFaceShift.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLFeedback.cs">
+      <Link>BMLNet\BMLFeedback.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLGaze.cs">
+      <Link>BMLNet\BMLGaze.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLGazeShift.cs">
+      <Link>BMLNet\BMLGazeShift.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLGesture.cs">
+      <Link>BMLNet\BMLGesture.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLHead.cs">
+      <Link>BMLNet\BMLHead.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLHeadDirectionShift.cs">
+      <Link>BMLNet\BMLHeadDirectionShift.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLLocomotion.cs">
+      <Link>BMLNet\BMLLocomotion.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLPointing.cs">
+      <Link>BMLNet\BMLPointing.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLPose.cs">
+      <Link>BMLNet\BMLPose.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLPosture.cs">
+      <Link>BMLNet\BMLPosture.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLPostureShift.cs">
+      <Link>BMLNet\BMLPostureShift.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLSpeech.cs">
+      <Link>BMLNet\BMLSpeech.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLStance.cs">
+      <Link>BMLNet\BMLStance.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLSyncPoint.cs">
+      <Link>BMLNet\BMLSyncPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\BMLNet\BMLWait.cs">
+      <Link>BMLNet\BMLWait.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\RageBMLNet.cs">
+      <Link>RageBMLNet.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\RageBMLNetSettings.cs">
+      <Link>RageBMLNetSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\RageBMLNet\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\..\..\AppData\Local\Temp\sj0mxieu.12c\MyFirstAsset\Resources\MyFirstAsset.VersionAndDependencies.xml">
-      <Link>Resources\MyFirstAsset.VersionAndDependencies.xml</Link>
+    <Content Include="..\RageBMLNet\Resources\RageBMLNet.VersionAndDependencies.xml">
+      <Link>Resources\RageBMLNet.VersionAndDependencies.xml</Link>
     </Content>
-    <Content Include="RageAssetManager.csproj" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RageAssetManager_Portable\RageAssetManager - Portable.csproj">

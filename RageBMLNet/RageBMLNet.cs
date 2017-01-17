@@ -171,11 +171,12 @@ namespace AssetPackage
 
         public void ParseFromFile(string filename)
         {
-            XmlTextReader reader = new XmlTextReader(filename);
-            if (reader != null)
-                Parse(reader);
-            else
-                Console.Error.WriteLine("WARNING: file error");
+            AssetManager.Instance.Log(Severity.Warning, "not supported yet in portable version");
+            //XmlTextReader reader = new XmlTextReader(filename);
+            //if (reader != null)
+            //    Parse(reader);
+            //else
+            //    AssetManager.Instance.Log(Severity.Warning, "file error");
         }
 
         public void ParseFromString(string xml)
