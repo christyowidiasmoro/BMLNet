@@ -24,6 +24,13 @@ To parse BML schema from file text
 To parse BML schema from string 
 
         bml.ParseFromString(System.IO.File.ReadAllText("assets/BML.xml"));
+
+Call Update eachtime Unity update the frame
+		
+		void Update () {
+			// for every update, need to update BMLNet
+			bml.Update(Time.deltaTime);
+		}
 		
 In order to monitor the BML synchronization time, we need to assign the callback
 
